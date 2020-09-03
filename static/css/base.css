@@ -235,6 +235,7 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content a {
 	color: #17a2b8; /* text-info */
+}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -260,3 +261,4 @@ input[name='q']::placeholder {
     body {
         height: calc(100vh - 116px);
     }
+}
