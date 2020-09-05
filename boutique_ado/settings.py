@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-import dj_database_url
+# import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -76,7 +76,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by allauth
+                'django.template.context_processors.request',  # required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
@@ -125,7 +125,9 @@ DATABASES = {
     }
 }
 
-
+# DATABASES = {
+#    'default': dj_database_url.parse('postgres://ymhfsngieerqlt:1249200a560b69f9d824e062157d7bb0e11d34ee0d39d44b5a4742a24dce951d@ec2-52-72-65-76.compute-1.amazonaws.com:5432/ddqik2maj08qbm')
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
